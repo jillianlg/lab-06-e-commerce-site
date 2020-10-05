@@ -1,16 +1,26 @@
 // IMPORT MODULES under test here:
-import { example } from '../product-utils.js';
+import { renderBeanie } from '../product-utils.js';
 
 const test = QUnit.test;
 
-test('time to test a function', (expect) => {
+test('should take in a beanie and retun an li with the appropariate contents', (expect) => {
+    const beanie = {
+        id: 'collectable',
+        name: 'Princess',
+        year: 'Mason J Planewright',
+        image: 'airplanes.png',
+        price: 665000,
+        description: 'Released in 1997, after the Beanie Babies craze had already hit, Princess the Bear was not part of the original collection.',
+    };
+    
+    
     //Arrange
     // Set up your arguments and expectations
-    const expected = true;
+    const expected = '<li class="beanie"><p class="name">Princess the Bear</p><p class="year">1997</p><p class="price">$665,000.00</p><img src="/assets/bb-princess.png" alt="Princess Beanie Baby"><div class="description">Princess the Bear is considered the Holy Grail of their Beanie Baby collection. The a purple bear with a white rose embroidered on its chest, was intended to be a fundraising model for The Diana, Princess of Wales Memorial Fund. Because of its rarity, the Princess the Bear Beanie baby model is considered to be the most expensive and valuable Beanie Baby.</div><button>Add to cart</button></li>';
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = false;
+    const actual = renderBeanie(beanie);
 
     //Expect
     // Make assertions about what is expected versus the actual result
