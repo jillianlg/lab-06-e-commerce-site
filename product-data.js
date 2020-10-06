@@ -4,8 +4,8 @@ export const beanies = [
         name: 'Princess the Bear',
         year: '1997',
         image: 'bb-princess.png',
-        price: 665000,
-        description: 'Princess the Bear is considered the Holy Grail of their Beanie Baby collection. The a purple bear with a white rose embroidered on its chest, was intended to be a fundraising model for The Diana, Princess of Wales Memorial Fund.',
+        price: 650000,
+        description: 'Princess the Bear is considered the Holy Grail of the Beanie Baby collection. The a purple bear with a white rose embroidered on its chest, was intended as a fundraising model for The Diana, Princess of Wales Memorial Fund. Initial production was limited to only 12 bears per vendor (they can be identified by "P.V.C Pellets" noted on the back of the tag.)',
         catagory: 'collectable',
     },
     {

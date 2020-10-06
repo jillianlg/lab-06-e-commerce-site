@@ -24,8 +24,8 @@ body {
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    font-family: 'Balsamiq Sans', sans-serif;
+    background-image: url('../assets/bb-background.jpg');
 }
 
 main {
@@ -37,7 +37,7 @@ main {
 }
 
 section {
-    background-color: var(--color5);
+    background-color: rgba(228, 222, 222, 0.646);
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -66,10 +66,10 @@ footer {
     box-shadow: var(--shadow);
 }
 
-
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .gutter-right {
