@@ -32,7 +32,7 @@ export const beanies = [
         year: '1996',
         image: 'bb-scoop.jpg',
         price: 100000,
-        description: 'The limited 2 year run meant there were fewer Scoop\'s in the market. Add that exclusitity to one of a handful of blank tag Scoop\'s you\'ve hit the jackpot.',
+        description: 'The limited 2 year run meant there were fewer Scoop\'s in the market. Add that to having one of a handful of blank tag Scoop\'s and you\'ve hit the jackpot.',
         catagory: 'collectable',
     },
     {

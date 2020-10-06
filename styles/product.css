@@ -25,21 +25,11 @@ main {
 
 section {
   max-width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding-top: var(--gutter);
   padding-bottom: var(--gutter);
   margin-top: var(--gutter);
   margin-bottom: var(--gutter);
 }
-
-/* div {
-  display: grid;
-  grid-template-columns: min-content;
-  grid-template-rows: min-content;
-} */
 
 header {
   display: flex;
@@ -59,7 +49,7 @@ footer {
 .product-info {
   width: 1000px;
   padding: 30px;
-  margin: 20px;
+  margin-top: 30px;
   background-color: rgba(228, 222, 222, 0.646);
   border: solid 2px  rgba(249, 212, 212, 0.872);
 }
@@ -97,6 +87,12 @@ footer {
   box-shadow: var(--shadow);
 }
 
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .beanie {
   width: 400px;
   padding: 10px;
@@ -104,7 +100,11 @@ footer {
   border-radius: 5px;
   background-color: #ffffff;
   border: solid 15px rgba(249, 212, 212, 0.872);
-  margin: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .beanie > img {
