@@ -30,6 +30,7 @@ section {
   padding-bottom: var(--gutter);
   margin-top: var(--gutter);
   margin-bottom: var(--gutter);
+  
 }
 
 header {
@@ -45,25 +46,6 @@ footer {
   justify-content: flex-end;
   background-color: var(--color3);
   box-shadow: var(--shadow);
-}
-
-.product-info {
-  width: 1000px;
-  padding: 30px;
-  margin-top: 30px;
-  background-color: rgba(228, 222, 222, 0.646);
-  border: solid 2px  rgba(249, 212, 212, 0.872);
-}
-
-h3 {
-  font-size: 1.15rem;
-  }
-
-h1 {
-  font-size: 3.25rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: black;
 }
 
 .gutter-right {
@@ -87,6 +69,80 @@ footer {
   box-shadow: var(--shadow);
 }
 
+/* Table Style */
+
+.main-section {
+  background-color: rgba(228, 222, 222, 0.646);
+  width: max auto;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  }
+
+table {
+  width: 100%;
+  
+}
+
+td, th {
+  border: solid 1px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+th {
+  background-color: rgba(249, 212, 212, 0.57);
+  border: white;
+}
+
+tr:nth-child(odd) {
+  background: white;
+}
+
+.total {
+  text-align: right;
+  padding: 10px;
+}
+
+.cart-total {
+  background-color: rgba(249, 212, 212, 0.57);
+  border: white;
+}
+
+button {
+ margin: 20px;
+ padding: 5px;
+ border-radius: 5px;
+ display: flex;
+flex-wrap: wrap;
+justify-content: end;
+background-color: rgba(249, 212, 212, 0.57);
+font-family: 'Balsamiq Sans', sans-serif;
+}
+
+/* .product-info {
+  width: 1000px;
+  padding: 30px;
+  margin-top: 30px;
+  background-color: rgba(228, 222, 222, 0.646);
+  border: solid 2px  rgba(249, 212, 212, 0.872);
+} */
+
+/* h3 {
+  
+  font-size: 1.15rem;
+  }
+
+h1 {
+  font-size: 3.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+} */
+/* 
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -121,4 +177,4 @@ ul {
 
 .beanie > button  {
   margin: 10px;
-}
+} */

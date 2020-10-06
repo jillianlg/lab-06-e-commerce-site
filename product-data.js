@@ -36,7 +36,7 @@ export const beanies = [
         catagory: 'collectable',
     },
     {
-        id: 'valention',
+        id: 'valentino',
         name: 'Valentino the Bear',
         year: '1999',
         image: 'bb-valentino.jpg',
