@@ -15,12 +15,12 @@ export function renderTableRow(cartItem) {
     const price = beanieData.price;
     const name = beanieData.name;
 
-    tdPrice.textContent = `$${price}`;
+    tdPrice.textContent = `${price.toLocaleString('en-US', { style:'currency', currency:'USD' })}`;
     tdName.textContent = name;
 
     const total = price * cartItem.quantity;
 
-    tdSubTotal.textContent = `$${total}`;
+    tdSubTotal.textContent = `${total.toLocaleString('en-US', { style:'currency', currency:'USD' })}`;
 
     tr.append(tdName, tdPrice, tdQuantity, tdSubTotal);
 
