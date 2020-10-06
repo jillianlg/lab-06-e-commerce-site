@@ -25,6 +25,7 @@ main {
 
 section {
     background-color: rgba(228, 222, 222, 0.646);
+    border: solid 2px  rgba(249, 212, 212, 0.872);
     width: 1000px;
     max-width: 80%;
     display: flex;
@@ -35,7 +36,6 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
 }
 
 header {
