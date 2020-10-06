@@ -24,8 +24,6 @@ main {
 }
 
 section {
-  /* background-color: var(--color5); */
-  /* width: 1000px; */
   max-width: 80%;
   display: flex;
   flex-direction: column;
@@ -35,7 +33,6 @@ section {
   padding-bottom: var(--gutter);
   margin-top: var(--gutter);
   margin-bottom: var(--gutter);
-  /* border: solid 2px var(--color1); */
 }
 
 /* div {
@@ -70,7 +67,6 @@ footer {
 h3 {
   
   font-size: 1.15rem;
-  /* font-weight: bolder; */
   }
 
 h1 {
@@ -104,7 +100,6 @@ footer {
 .beanie {
   width: 400px;
   padding: 10px;
-  /* border: solid 1px; */
   text-align: center;
   border-radius: 5px;
   background-color: #ffffff;
