@@ -12,7 +12,6 @@ export function renderTableRow(cartItem) {
 
     const beanieData = findById(beanies, cartItem.id);
 
-    /* bookData is an object that has: .title, .id, .price, .author */
     const price = beanieData.price;
     const name = beanieData.name;
 
