@@ -1,0 +1,129 @@
+body {
+  --color1: #ffffff;
+  --color2: #ffffff;
+  --color3: #ffffff;
+  --color4: #ffffff;
+  --color5: #ffffff;
+  
+  --header-height: 80px;
+  --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
+  --gutter: 30px;
+  --footer-height: 25px;
+  
+  font-family: 'Balsamiq Sans', sans-serif;
+  background-image: url('../assets/bb-background.jpg');
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: calc(var(--footer-height));
+}
+
+section {
+  /* background-color: var(--color5); */
+  /* width: 1000px; */
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: var(--gutter);
+  padding-bottom: var(--gutter);
+  margin-top: var(--gutter);
+  margin-bottom: var(--gutter);
+  /* border: solid 2px var(--color1); */
+}
+
+/* div {
+  display: grid;
+  grid-template-columns: min-content;
+  grid-template-rows: min-content;
+} */
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--color3);
+  height: var(--header-height);
+  box-shadow: var(--shadow);
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--color3);
+  box-shadow: var(--shadow);
+}
+
+.product-info {
+  width: 1000px;
+  padding: 30px;
+  margin: 20px;
+  background-color: rgba(228, 222, 222, 0.646);
+  border: solid 2px  rgba(249, 212, 212, 0.872);
+}
+
+h3 {
+  
+  font-size: 1.15rem;
+  /* font-weight: bolder; */
+  }
+
+h1 {
+  font-size: 3.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.gutter-right {
+  margin-right: 20px;
+}
+
+header img {
+  height: var(--header-height);
+}
+
+p {
+  margin: var(--gutter);
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: var(--footer-height);
+  background-color: var(--color3);
+  box-shadow: var(--shadow);
+}
+
+.beanie {
+  width: 400px;
+  padding: 10px;
+  /* border: solid 1px; */
+  text-align: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+  border: solid 15px rgba(249, 212, 212, 0.872);
+  margin: 20px;
+}
+
+.beanie > img {
+  width: 100px;
+}
+
+.beanie > p {
+  margin: 0;
+}
+
+.beanie > div  {
+  text-align: left;
+}
+
+.beanie > button  {
+  margin: 10px;
+}
