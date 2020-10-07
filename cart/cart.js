@@ -1,7 +1,7 @@
 import { cartTotal, renderTableRow } from '../cart/cart-utils.js';
 import { CARTDATA, getFromLocalStorage } from '../product-utils.js';
 import { beanies } from '../product-data.js';
-// import { findById } from '../product-utils.js';
+
 
 const table = document.querySelector('tbody');
 const orderButton = document.querySelector('button');
@@ -12,7 +12,7 @@ for (let i = 0; i < shoppingCart.length; i++) {
     const beanieItem = shoppingCart[i];
 
     const tr = renderTableRow(beanieItem);
-console.log(beanieItem, tr);
+
     table.appendChild(tr);
 }
 
@@ -27,5 +27,5 @@ orderButton.addEventListener('click', () => {
     alert(stringyCart);
 
     localStorage.clear();
-    window.location.href = '/';
+    window.location.href = '/index.html';
 });
