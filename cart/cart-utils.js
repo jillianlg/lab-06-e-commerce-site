@@ -1,4 +1,3 @@
-// import { cart } from './cart-data.js';
 import { beanies } from '../product-data.js';
 import { findById } from '../product-utils.js';
 
