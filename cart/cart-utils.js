@@ -1,3 +1,4 @@
+// import { cart } from './cart-data.js';
 import { beanies } from '../product-data.js';
 import { findById } from '../product-utils.js';
 
@@ -26,3 +27,23 @@ export function renderTableRow(cartItem) {
 
     return tr;
 }
+
+
+
+export function cartTotal(cart, beanies) {
+
+    let totalCost = 0;
+
+    for (let i = 0; i < cart.length; i++) {
+        const item = cart[i];
+
+        const singleBeanie = findById(beanies, item.id);
+
+        const subtotal = singleBeanie.price * item.quantity;
+
+        totalCost = totalCost + subtotal;
+    }
+
+    return totalCost;
+}
+
