@@ -1,10 +1,4 @@
 body {
-  --color1: #ffffff;
-  --color2: #ffffff;
-  --color3: #ffffff;
-  --color4: #ffffff;
-  --color5: #ffffff;
-  
   --header-height: 80px;
   --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
   --gutter: 30px;
@@ -25,7 +19,7 @@ main {
 
 section {
   max-width: 80%;
-  width: 1250px;
+  width: 1000px;
   padding-top: var(--gutter);
   padding-bottom: var(--gutter);
   margin-top: var(--gutter);
@@ -36,17 +30,11 @@ section {
 header {
   display: flex;
   justify-content: flex-end;
-  background-color: var(--color3);
+  background:  rgba(215, 212, 249, 0.70);
   height: var(--header-height);
   box-shadow: var(--shadow);
 }
 
-footer {
-  display: flex;
-  justify-content: flex-end;
-  background-color: var(--color3);
-  box-shadow: var(--shadow);
-}
 
 .gutter-right {
   margin-right: 20px;
@@ -65,14 +53,14 @@ footer {
   width: 100%;
   bottom: 0;
   height: var(--footer-height);
-  background-color: var(--color3);
+  background:  rgba(215, 212, 249, 0.70);
   box-shadow: var(--shadow);
 }
 
 /* Table Style */
-
 .main-section {
-  background-color: rgba(228, 222, 222, 0.646);
+  background-color: rgba(255, 255, 255, 0.70);
+  border: solid 2px  rgba(215, 212, 249, 0.872);
   width: max auto;
   padding: 20px;
 }
@@ -94,12 +82,17 @@ td, th {
 }
 
 th {
-  background-color: rgba(249, 212, 212, 0.57);
+  background-color: rgba(215, 212, 249, 0.70);
   border: white;
 }
 
 tr:nth-child(odd) {
-  background: white;
+  /* background: white; */
+  background-color: rgba(255, 255, 255, 0.70);
+}
+
+tr:nth-child(even) {
+  background:  rgba(215, 212, 249, 0.70);
 }
 
 .total {
@@ -108,19 +101,27 @@ tr:nth-child(odd) {
 }
 
 .cart-total {
-  background-color: rgba(249, 212, 212, 0.57);
+  background-color: rgba(215, 212, 249, 0.70);
+  
   border: white;
 }
 
 button {
- margin: 20px;
- padding: 5px;
- border-radius: 5px;
- display: flex;
-flex-wrap: wrap;
-justify-content: end;
-background-color: rgba(249, 212, 212, 0.57);
-font-family: 'Balsamiq Sans', sans-serif;
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(215, 212, 249, 0.70);
+  font-family: 'Balsamiq Sans', sans-serif;
+}
+
+.products-page {
+  margin: 5px;
+  font-size: 0.5rem;
+  text-align: center;
+
 }
 
 /* .product-info {
