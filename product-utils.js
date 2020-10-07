@@ -69,3 +69,18 @@ export function renderBeanie(beanies) {
 
     return li;
 }
+
+export function getFromLocalStorage(key) {
+    const item = localStorage.getItem(key);
+
+    return JSON.parse(item);
+}
+
+// this function will not return anything
+export function setInLocalStorage(key, value) {
+    const stringyItem = JSON.stringify(value);
+
+    localStorage.setItem(key, stringyItem);
+
+    return value;
+}
