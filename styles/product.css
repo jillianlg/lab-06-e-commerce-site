@@ -8,6 +8,15 @@ body {
   background-image: url('../assets/bb-background.jpg');
 }
 
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-between;
+  /* margin-left: 100px; */
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
