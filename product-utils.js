@@ -1,16 +1,11 @@
 
-// id: 'princess',
-// name: 'Princess The Bear',
-// year: '1997',
-// image: 'princess.png',
-// price: 665000,
-// description: 'Princess the Bear is...
-// catagory: 'collectable'
+export const CARTDATA = 'CARTDATA';
+
 export function findById(someArray, someId) {
 
     for (let i = 0; i < someArray.length; i++) {
         const item = someArray[i];
-        // is this item a match with our someId?
+        
         if (item.id === someId) {
             return item;
         }
@@ -50,7 +45,43 @@ export function renderBeanie(beanies) {
     li.appendChild(description);
 
     button.textContent = 'Add to cart';
+
+    button.addEventListener('click', () => {
+        const shoppingCart = getFromLocalStorage(CARTDATA) || [];
+        const itemInCart = findById(shoppingCart, beanies.id);
+        
+        if (itemInCart === undefined) {
+            
+            const newCartItem = {
+                id: beanies.id,
+                quantity: 1,
+            };
+            
+            shoppingCart.push(newCartItem);
+        } else {
+            itemInCart.quantity++;
+        }
+        setInLocalStorage(CARTDATA, shoppingCart);
+        
+    });
+
+
     li.appendChild(button);
 
     return li;
+}
+
+export function getFromLocalStorage(key) {
+    const item = localStorage.getItem(key);
+
+    return JSON.parse(item);
+}
+
+// this function will not return anything
+export function setInLocalStorage(key, value) {
+    const stringyItem = JSON.stringify(value);
+
+    localStorage.setItem(key, stringyItem);
+
+    return value;
 }
