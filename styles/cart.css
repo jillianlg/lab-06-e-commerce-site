@@ -1,4 +1,4 @@
-body {  
+body {
   --header-height: 80px;
   --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
   --gutter: 30px;
@@ -24,15 +24,17 @@ section {
   padding-bottom: var(--gutter);
   margin-top: var(--gutter);
   margin-bottom: var(--gutter);
+  
 }
 
 header {
   display: flex;
   justify-content: flex-end;
-  background-color: rgba(249, 212, 212, 0.45);
+  background:  rgba(215, 212, 249, 0.70);
   height: var(--header-height);
   box-shadow: var(--shadow);
 }
+
 
 .gutter-right {
   margin-right: 20px;
@@ -51,31 +53,97 @@ footer {
   width: 100%;
   bottom: 0;
   height: var(--footer-height);
-  background-color: rgba(249, 212, 212, 0.45);
+  background:  rgba(215, 212, 249, 0.70);
   box-shadow: var(--shadow);
 }
 
-/* Product Styles */
-.product-info {
-  width: 850px;
-  padding: 30px;
-  margin-top: 30px;
+/* Table Style */
+.main-section {
   background-color: rgba(255, 255, 255, 0.70);
-  border: solid 2px  rgba(249, 212, 212, 0.872);
+  border: solid 2px  rgba(215, 212, 249, 0.872);
+  width: max auto;
+  padding: 20px;
 }
 
 h3 {
+  font-size: 2rem;
+  text-align: center;
+  }
+
+table {
+  width: 100%;
+  
+}
+
+td, th {
+  border: solid 1px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+th {
+  background-color: rgba(215, 212, 249, 0.70);
+  border: white;
+}
+
+tr:nth-child(odd) {
+  /* background: white; */
+  background-color: rgba(255, 255, 255, 0.70);
+}
+
+tr:nth-child(even) {
+  background:  rgba(215, 212, 249, 0.70);
+}
+
+.total {
+  text-align: right;
+  padding: 10px;
+}
+
+.cart-total {
+  background-color: rgba(215, 212, 249, 0.70);
+  
+  border: white;
+}
+
+button {
+  margin: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgba(215, 212, 249, 0.70);
+  font-family: 'Balsamiq Sans', sans-serif;
+}
+
+.products-page {
+  margin: 5px;
+  font-size: 0.5rem;
+  text-align: center;
+
+}
+
+/* .product-info {
+  width: 1000px;
+  padding: 30px;
+  margin-top: 30px;
+  background-color: rgba(228, 222, 222, 0.646);
+  border: solid 2px  rgba(249, 212, 212, 0.872);
+} */
+
+/* h3 {
+  
   font-size: 1.15rem;
   }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 3.25rem;
   font-weight: bold;
   margin-bottom: 10px;
   color: black;
-  text-align: center;
-}
-
+} */
+/* 
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -87,8 +155,8 @@ ul {
   padding: 10px;
   text-align: center;
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.95);
-  border: solid 5px rgba(249, 212, 212, 0.872);
+  background-color: #ffffff;
+  border: solid 15px rgba(249, 212, 212, 0.872);
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -110,4 +178,4 @@ ul {
 
 .beanie > button  {
   margin: 10px;
-}
+} */
