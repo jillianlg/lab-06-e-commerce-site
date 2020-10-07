@@ -8,10 +8,11 @@ export function renderTableRow(cartItem) {
     const tdQuantity = document.createElement('td');
     const tdSubTotal = document.createElement('td');
 
+    console.log(cartItem);
     tdQuantity.textContent = cartItem.quantity;
 
     const beanieData = findById(beanies, cartItem.id);
-
+console.log(beanieData);
     const price = beanieData.price;
     const name = beanieData.name;
 

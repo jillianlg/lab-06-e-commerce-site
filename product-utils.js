@@ -48,20 +48,21 @@ export function renderBeanie(beanies) {
 
     button.addEventListener('click', () => {
         const shoppingCart = getFromLocalStorage(CARTDATA) || [];
-        const cartItem = findById(shoppingCart, beanies.id);
-
-        if (cartItem === undefined) {
-
+        const itemInCart = findById(shoppingCart, beanies.id);
+        
+        if (itemInCart === undefined) {
+            
             const newCartItem = {
                 id: beanies.id,
                 quantity: 1,
             };
-
+            
             shoppingCart.push(newCartItem);
         } else {
-            cartItem.quantity++;
+            itemInCart.quantity++;
         }
         setInLocalStorage(CARTDATA, shoppingCart);
+        console.log('click' + shoppingCart);
     });
 
 
