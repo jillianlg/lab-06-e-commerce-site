@@ -7,15 +7,16 @@ const orderButton = document.querySelector('button');
 
 const shoppingCart = getFromLocalStorage(CARTDATA) || [];
 
+const beanies = seedAndGetBeanie();
+
 for (let i = 0; i < shoppingCart.length; i++) {
     const beanieItem = shoppingCart[i];
 
-    const tr = renderTableRow(beanieItem);
+    const tr = renderTableRow(beanieItem, beanies);
 
     table.appendChild(tr);
 }
 
-const beanies = seedAndGetBeanie();
 
 const total = cartTotal(shoppingCart, beanies);
 

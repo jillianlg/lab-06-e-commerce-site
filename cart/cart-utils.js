@@ -1,18 +1,18 @@
-import { beanies } from '../product-data.js';
+// import { beanies } from '../product-data.js';
 import { findById } from '../product-utils.js';
 
-export function renderTableRow(cartItem) {
+export function renderTableRow(cartItem, beanies) {
     const tr = document.createElement('tr');
     const tdName = document.createElement('td');
     const tdPrice = document.createElement('td');
     const tdQuantity = document.createElement('td');
     const tdSubTotal = document.createElement('td');
 
-    console.log(cartItem);
+
     tdQuantity.textContent = cartItem.quantity;
 
     const beanieData = findById(beanies, cartItem.id);
-console.log(beanieData);
+
     const price = beanieData.price;
     const name = beanieData.name;
 
