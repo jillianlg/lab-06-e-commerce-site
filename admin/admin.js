@@ -25,4 +25,5 @@ form.addEventListener('submit', (e) => {
 
     addBeanie(newBeanie);
 
+    // form.rest();
 });
