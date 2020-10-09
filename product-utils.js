@@ -102,3 +102,12 @@ export function seedAndGetBeanie() {
 
     return localStorageBeanies;
 }
+
+export function addBeanie(newBeanie) {
+    const localStorageBeanies = seedAndGetBeanie();
+
+    localStorageBeanies.push(newBeanie);
+
+    const stringyLocalBeanies = JSON.stringify(localStorageBeanies);
+    localStorage.setItem(PRODUCTS, stringyLocalBeanies);
+}

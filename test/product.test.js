@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { renderBeanie } from '../product-utils.js';
+import { renderBeanie, seedAndGetBeanie, addBeanie } from '../product-utils.js';
 
 const test = QUnit.test;
 
@@ -29,7 +29,7 @@ test('should take in a beanies and retun an li with the appropariate contents', 
 });
 
 // ADD PRODUCT test
-test('addProduct should take in a product object and add it to local storage (returning nothing)', (expect) => {
+test('addBeanie should take in a product object and add it to local storage (returning nothing)', (expect) => {
     const newBeanie = {
         id: 'patti',
         name: 'Patti the Platapus',
@@ -94,10 +94,11 @@ test('addProduct should take in a product object and add it to local storage (re
         },
     ];
 
-    addProduct(newBeanie);
+    addBeanie(newBeanie);
 
-    const localStorageAfter = JSON.parse(localStorage.getItem('beanies'));
+    // const localStorageAfter = JSON.parse(localStorage.getItem('beanies'));
+    const actual = seedAndGetBeanie(expectation);
 
       //Expect
-    expect.deepEqual(expectation, localStorageAfter);
+    expect.deepEqual(expectation, actual);
 });

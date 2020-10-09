@@ -1,5 +1,5 @@
 import { renderTableRow, cartTotal } from '../cart/cart-utils.js';
-import { beanies } from '../product-data.js';
+import { beanies as hardCodedBeanies } from '../product-data.js';
 const test = QUnit.test;
 
 test('should take in a cartItem and return a tr element with the appropriate contents', (expect) => {
@@ -27,8 +27,9 @@ test('should take in a cart subtotals and return a tr element total value of ite
     const expected = 250000;
     
     //Actual
-    const actual = cartTotal(cart, beanies);
+    const actual = cartTotal(cart, hardCodedBeanies);
 
     //Expect
     expect.equal(actual, expected);
 });
+

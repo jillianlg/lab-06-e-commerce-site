@@ -1,6 +1,6 @@
 const form = document.querySelector('form');
-import { PRODUCTS } from '../constants.js';
-import { seedAndGetBeanie } from '../product-utils.js';
+// import { PRODUCTS } from '../constants.js';
+import { addBeanie } from '../product-utils.js';
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -23,11 +23,6 @@ form.addEventListener('submit', (e) => {
         description: description,
     };
 
-    const localStorageBeanies = seedAndGetBeanie();
-
-    localStorageBeanies.push(newBeanie);
-
-    const stringyLocalBeanies = JSON.stringify(localStorageBeanies);
-    localStorage.setItem(PRODUCTS, stringyLocalBeanies);
+    addBeanie(newBeanie);
 
 });
