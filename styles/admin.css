@@ -48,11 +48,11 @@ main {
 section {
   max-width: 80%;
   width: 1000px;
+  height: 500px;
   padding-top: var(--gutter);
   padding-bottom: var(--gutter);
   margin-top: var(--gutter);
   margin-bottom: var(--gutter);
-  
 }
 
 header { 
@@ -112,12 +112,12 @@ form {
 label {
   display: flex;
   justify-content: space-between;
-  margin: 0px 50px;
+  margin: 5px 50px;
 }
 
 button {
   width: 10%;
   align-self: flex-end;
-  margin: 0px 50px;
+  margin: 10px 50px;
   padding: 5px;
 }

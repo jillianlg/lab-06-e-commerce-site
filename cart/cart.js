@@ -1,6 +1,5 @@
 import { cartTotal, renderTableRow } from '../cart/cart-utils.js';
-import { CARTDATA, getFromLocalStorage } from '../product-utils.js';
-import { beanies } from '../product-data.js';
+import { CARTDATA, seedAndGetBeanie, getFromLocalStorage } from '../product-utils.js';
 
 
 const table = document.querySelector('tbody');
@@ -15,6 +14,8 @@ for (let i = 0; i < shoppingCart.length; i++) {
 
     table.appendChild(tr);
 }
+
+const beanies = seedAndGetBeanie();
 
 const total = cartTotal(shoppingCart, beanies);
 

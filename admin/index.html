@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/admin.css">
     <title>Collactable Admin Beanies</title>
 </head>
@@ -32,23 +32,27 @@
         <form>
             <label>
                 Tag Name
-                <input name="id" />
+                <input name="id" placeholder="batty"/>
             </label>
             <label>
                 Beanie Title
-                <input  name="name" />
+                <input  name="name" placeholder="Batty the Bat"/>
             </label>
             <label>
                 Release Year
-                <input name="year" />
-            </label>
-            <label>
-                Image
-                <input name="image" />
+                <input name="year" placeholder="1997"/>
             </label>
             <label>
                 Value
-                <input name="price" />
+                <input name="price" placeholder="125000"/>
+            </label>
+            <label>
+                Image
+                <input name="image" placeholder="batty.png"/>
+            </label>
+            <label>
+                Description
+                <textarea name="description" col="20" rows="5" placeholder="This Batty is one of the original brown Batty The Bats with the extra foot."></textarea>
             </label>
             <button>Submit</button>
         </form>

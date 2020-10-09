@@ -1,4 +1,7 @@
 
+import { PRODUCTS } from './constants.js';
+import { beanies as hardCodedBeanies } from './product-data.js';
+
 export const CARTDATA = 'CARTDATA';
 
 export function findById(someArray, someId) {
@@ -84,4 +87,18 @@ export function setInLocalStorage(key, value) {
     localStorage.setItem(key, stringyItem);
 
     return value;
+}
+
+export function seedAndGetBeanie() {
+
+    let localStorageBeanies = JSON.parse(localStorage.getItem(PRODUCTS));
+    
+    if (!localStorageBeanies) {
+        const stringyBeanies = JSON.stringify(hardCodedBeanies);
+    
+        localStorage.setItem(PRODUCTS, stringyBeanies);
+        localStorageBeanies = hardCodedBeanies;
+    }
+
+    return localStorageBeanies;
 }
