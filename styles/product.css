@@ -85,7 +85,7 @@ footer {
 
 /* Product Styles */
 .product-info {
-  width: 850px;
+  width: auto;
   padding: 30px;
   margin-top: 30px;
   background-color: rgba(255, 255, 255, 0.70);

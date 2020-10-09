@@ -4,6 +4,8 @@ import { beanies as hardCodedBeanies } from './product-data.js';
 
 export const CARTDATA = 'CARTDATA';
 
+
+// findById Function
 export function findById(someArray, someId) {
 
     for (let i = 0; i < someArray.length; i++) {
@@ -15,6 +17,7 @@ export function findById(someArray, someId) {
     }
 }
 
+// renderBeanie on Product index.html function
 export function renderBeanie(beanies) {
     const li = document.createElement('li');
     const name = document.createElement('p');
@@ -47,6 +50,7 @@ export function renderBeanie(beanies) {
     description.textContent = beanies.description;
     li.appendChild(description);
 
+// button listener for renderBeanie function
     button.textContent = 'Add to cart';
 
     button.addEventListener('click', () => {
@@ -74,13 +78,14 @@ export function renderBeanie(beanies) {
     return li;
 }
 
+// GET localStorage function
 export function getFromLocalStorage(key) {
     const item = localStorage.getItem(key);
 
     return JSON.parse(item);
 }
 
-// this function will not return anything
+// SET localStorage function
 export function setInLocalStorage(key, value) {
     const stringyItem = JSON.stringify(value);
 
@@ -89,6 +94,7 @@ export function setInLocalStorage(key, value) {
     return value;
 }
 
+// Add original product data to localStorage and return product data Function
 export function seedAndGetBeanie() {
 
     let localStorageBeanies = JSON.parse(localStorage.getItem(PRODUCTS));
@@ -103,6 +109,7 @@ export function seedAndGetBeanie() {
     return localStorageBeanies;
 }
 
+// Add new products to localStorage Function
 export function addBeanie(newBeanie) {
     const localStorageBeanies = seedAndGetBeanie();
 
